@@ -1,0 +1,158 @@
+#content_login{
+  display: flex;
+  justify-content: center;
+}
+#ajouter{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin:10px;
+  margin-left: 41%;
+  width:17%;
+  margin-top: 20px;
+}
+#ajouter:hover{
+  color:white;
+}
+#chercher{
+  display:block;
+
+}
+h4{
+  font-weight: lighter;
+  margin:15px;
+  font-style: italic;
+}
+#employeurT{
+  width:98%;
+  border-radius: 2.8px;
+  border:3px solid rgb(128, 128, 128);
+  margin:10px;
+  margin-top:30px;
+}
+#error{
+  margin-top: 10px;
+  margin-bottom:0;
+  display: flex;
+  justify-content:center;
+  font-family: 'Raleway', sans-serif;
+}
+#error > div{
+  width: 98%;
+  text-align: center;
+}
+#errorImage{
+  display:flex;
+  border-radius: 5px;
+  width: 40%;
+  height: 40%;
+}
+#login_container > a{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 15px 0px;
+}
+#login_container > a:hover{
+  background-color: black;
+}
+#nav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: rgb(60, 59, 72);
+  display: flex;
+  padding:17px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.links{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+}
+.links > img{
+  width:40px;
+  height:40px;
+  background-color: white;
+  border-radius: 5px;
+  padding:5px
+}
+.links > img:hover{
+  box-shadow: rgba(255, 255, 255, 0.55) 0px 0px 10px 0px;
+}
+.links:hover{
+  color:rgb(107, 169, 245);
+  text-decoration:none;
+}
+#login{
+  margin:10px;
+  text-decoration:none;
+  color:white;
+  border-radius:20px;
+  padding:10px;
+  padding-left:15px;
+  padding-right:15px;
+  background-color: rgb(13, 35, 76);
+}
+#logout{
+  border:none;
+  margin:10px;
+  color:white;
+  text-decoration:none;
+  background-color:rgb(43, 46, 65);
+  border-radius: 20px;
+  padding:10px;
+}
+#register{
+  margin:10px;
+  text-decoration:none;
+  color:white;
+  border-radius:20px;
+  padding:10px;
+  padding-left:15px;
+  padding-right:15px;
+  background-color: rgb(32, 30, 63);
+}
+.input > input{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:10px;
+  border:solid 1px grey;
+  border-radius: 3px;
+  padding:3px;
+}
+.input{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top: 40px;
+  margin-left:37%;
+  margin-right:37%;
+}
+.submit:hover{
+  box-shadow: rgba(0, 94, 255, 0.75) 0px 0px 10px 0px;
+}
+.submit{
+  margin-bottom: 10px;
+  width:100px;
+  height:50px;
+  color:white;
+  background-color:rgb(0, 94, 255);
+  border-radius: 8px;
+  font-size: 18px;
+  border:none;
+  padding:11px;
+}
+.submit-container{
+  margin-top:0px;
+  display:flex;
+  justify-content:center;
+}
+.input-radio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+.input-radio > div{
+  margin:7px;
+  font-size:19px;
+}

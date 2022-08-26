@@ -1,0 +1,42 @@
+{% extends "layout.html"%}
+
+{% block title%}Employeur{% endblock %}
+{% block body %}
+<form method="post" action="/ajouter_employeur">
+    <div class="input">
+        <input class="text-input" placeholder="Nom" type="text" name="Nom">
+        <input class="text-input" placeholder="Prénom" type="text" name="Prenom">
+        <label for="Date">Date de naissance:</label>
+        <input class="text-input" type="date" name="Date">
+        <label for="DateE">Date d'embauche:</label>
+        <input class="text-input" type="date" name="DateE">
+        <select class="form-select" aria-label="Default select example" name="Situation">
+            <option value="Mariée1">Mariée</option>
+            <option value="Célibataire">Célibataire</option>
+          </select>
+        <input class="text-input" placeholder="adresse" type="text" name="Adresse">
+        <input class="text-input" placeholder="Numéro de téléphone" type="text" name="Numero">
+        <input class="text-input" placeholder="Email" type="text" name="Email">
+        <input class="text-input" placeholder="Fonctionalité" type="text" name="Fonctionalite">
+        <input class="text-input" placeholder="Salaire" type="text" name="Salaire">
+    </div>
+    <div class="input-radio">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Genre" id="Etablissement" value="Homme">
+            <label class="form-check-label" for="Etablissement">
+                Homme
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Genre" id="Employeur" value="Femme" checked>
+            <label class="form-check-label" for="Employeur">
+                Femme
+            </label>
+        </div>
+    </div>
+    <div class="submit-container">
+        <input class="submit" class="btn btn-primary" type="submit" value="Ajouter">
+    <div>
+</form>
+
+{% endblock %}

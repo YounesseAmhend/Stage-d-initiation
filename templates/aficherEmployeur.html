@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block title%}Employeur{% endblock %}
+{% block body%}
+    <a href="/ajouter_employeur" id="ajouter" class="submit">Ajouter un employeur</a>
+    <form action="/employeur" method="post">
+        <div class="input">
+            <input class="text-input" placeholder="Nom" type="text" name="Nom">
+            <input class="text-input" placeholder="Prénom" type="text" name="Prenom">
+        </div>
+        <div class="submit-container">
+            <input id="chercher"class="submit" class="btn btn-primary" type="submit" value="Chercher">
+        </div>
+    </form>
+    {% if employeur %}
+    <h4>L'employeur</h4>
+    <table id="employeurT"class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Fonctionalite</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Salaire</th>
+            <th scope="col">Date d'embauche</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for e in employeur %}
+        <tr>
+            <td>{{e.n.Nom}}</td>
+            <td>{{e.n.Prenom}}</td>
+            <td>{{e.n.Fonctionalite}}</td>
+            <td>{{e.n.Email}}</td>
+            <td>{{e.n.salaire}}</td>
+            <td>{{e.n.Date_embauche}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <hr>
+    <h4>Les conjes</h4>
+    <table id="employeurT"class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Date de debut</th>
+            <th scope="col">Date de fin</th>
+            <th scope="col">Motif</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for e in conje %}
+        <tr>
+            <td>{{e.m.Nom}}</td>
+            <td>{{e.m.Prenom}}</td>
+            <td>{{e.n.Date_debut}}</td>
+            <td>{{e.n.Date_Fin}}</td>
+            <td>{{e.n.Motif}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <hr>
+    <h4>Les absences</h4>
+    <table id="employeurT"class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Date de debut</th>
+            <th scope="col">Date de fin</th>
+            <th scope="col">Motif</th>
+            <th scope="col">Justifie</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for e in absence %}
+        <tr>
+            <td>{{e.m.Nom}}</td>
+            <td>{{e.m.Prenom}}</td>
+            <td>{{e.n.date_debut}}</td>
+            <td>{{e.n.date_fin}}</td>
+            <td>{{e.n.Motif}}</td>
+            <td>{{e.n.Justifie}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+{% endblock %}

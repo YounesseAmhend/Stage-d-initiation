@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title%}Travail{% endblock %}
+{% block body%}
+<form method="post" action="/heure_suplementaire">
+    <div class="input">
+        <input type="text" name="Nom" placeholder="Nom">
+        <input type="text" name="Prenom" placeholder="Prénom">
+        <input type="date" name="Date" placeholder="Date">
+        <input type="text" name="NombreHeure" placeholder="Nombre d'heures">
+    </div>
+    <div class="submit-container">
+        <input class="btn btn-primary" type="submit" value="Ajouter">
+    </div>
+</form>
+{% endblock %}

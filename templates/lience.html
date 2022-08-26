@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title%}Lience{% endblock %}
+{% block body%}
+<form method="post" action="/licencier">
+    <div class="input">
+        <input type="text" name="Prenom" placeholder="Prénom">
+        <input type="text" name="Nom" placeholder="Nom">
+        <div>Date de licenciement :</div>
+        <input type="date" name="DateFin" placeholder="La date">
+        <input type="text" name="Motif" placeholder="Motif">
+    </div>
+    <div class="submit-container">
+        <input class="btn btn-primary" type="submit" value="Licencé">
+    </div>
+</form>
+{% endblock %}

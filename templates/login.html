@@ -1,0 +1,25 @@
+{% extends "layout.html"%}
+
+{% block title%}Login{% endblock %}
+{% block body %}
+<form method="post" action="/login">
+    <div class="input-radio">
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="choix" id="Etablissement" value="Etablissement">
+          <label class="form-check-label" for="Etablissement">
+            Etablissement
+          </label>
+      </div>
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="choix" id="Employeur" value="Employeur">
+          <label class="form-check-label" for="Employeur">
+            employeur
+          </label>
+      </div>
+    </div>
+    <div class="submit-container">
+      <input class="btn btn-primary" type="submit" value="Suivant">
+    </div>
+</form>
+
+{% endblock %}

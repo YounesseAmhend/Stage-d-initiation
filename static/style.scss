@@ -1,0 +1,15 @@
+#nav {
+    background-color: rgb(60, 59, 72);
+    display: flex;
+    justify-content: flex-end;
+  }/*# sourceMappingURL=style.css.map */
+#login{
+    margin:10px;
+    text-decoration:none;
+}
+.input > input{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    margin:10px;
+}

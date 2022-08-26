@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title%}Prime{% endblock %}
+{% block body%}
+<form method="post" action="/prime">
+    <div class="input">
+        <input class="text-input" placeholder="Nom" type="text" name="Nom">
+        <input class="text-input" placeholder="Prénom" type="text" name="Prenom">
+        <input type="text" name="Motif" placeholder="Motif">
+        <div>Date de prime:</div>
+        <input type="date" name="Date" placeholder="Date">
+        <input type="text" name="Montant" placeholder="Montant">
+    </div>
+    <div class="submit-container">
+        <input class="btn btn-primary" type="submit" value="Ajouter">
+    </div>
+</form>
+{% endblock %}

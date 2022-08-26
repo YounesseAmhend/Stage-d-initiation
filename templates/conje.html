@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title%}Conje{% endblock %}
+{% block body%}
+<form method="post" action="/conje">
+    <div class="input">
+        <input class="text-input" placeholder="Nom" type="text" name="Nom">
+        <input class="text-input" placeholder="Prénom" type="text" name="Prenom">
+        <div>Date de début:</div>
+        <input type="date" name="DateD" placeholder="Date de début">
+        <div>Date de fin:</div>
+        <input type="date" name="DateF" placeholder="Date de fin">
+        <input type="text" name="Motif" placeholder="Motif">
+    </div>
+    <div class="submit-container">
+        <input class="btn btn-primary" type="submit" value="Ajouter">
+    </div>
+</form>
+{% endblock %}

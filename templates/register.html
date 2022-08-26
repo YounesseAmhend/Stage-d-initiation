@@ -1,0 +1,20 @@
+{% extends "layout.html"%}
+
+{% block title%}Register{% endblock %}
+{% block body %}
+
+<form method="post" action="/register">
+    <div class="input">
+      <input type="text" name="etablissement" placeholder="Nom d'etablissement">
+      <input type="text" name="Email" placeholder="Email">
+      <input type="password" name="Password" placeholder="Mot de passe">
+      <input type="text" name="Adresse" placeholder="Adresse">
+      <input type="text" name="Numero" placeholder="Numero de telephone">
+      <input type="text" name="Site" placeholder="Website">
+    </div>
+    <div class="submit-container">
+      <input class="submit" class="btn btn-primary" type="submit" value="S'incrire">
+    <div>
+</form>
+
+{% endblock %}

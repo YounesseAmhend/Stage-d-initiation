@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title%}Tache{% endblock %}
+{% block body%}
+<form method="post" action="/tache">
+    <div class="input">
+        <input type="text" name="Nom" placeholder="Nom">
+        <input type="text" name="Prenom" placeholder="Prénom">
+        <input type="date" name="DateLimite" placeholder="Date limite">
+        <input type="text" name="Description" placeholder="Description">
+    </div>
+    <div class="submit-container">
+        <input class="btn btn-primary" type="submit" value="Ajouter">
+    </div>
+</form>
+{% endblock %}
