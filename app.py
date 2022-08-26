@@ -330,22 +330,6 @@ def licenciers():
     else:
         return render_template("/lience.html")   
 
-
-@app.route("/tache", methods=["GET", "POST"])
-@login_required
-def taches():
-    if request.method == "POST":
-        Nom = request.form["Nom"].title()
-        Prenom = request.form["Prenom"].title()
-        date_limite = request.form["DateLimite"]
-        Description = request.form["Description"]
-        with drivers.session() as session:
-            session.write_transaction(tache, Nom, Prenom, date_limite, Description)
-        drivers.close()
-        return redirect("/")
-    else:
-        return render_template("/tache.html")
-
 @app.route("/logout")
 @login_required
 def logout():
